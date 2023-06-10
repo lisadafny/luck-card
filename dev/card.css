@@ -1,0 +1,82 @@
+.card-wrap{
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    perspective: 100rem;
+}
+
+.card-back {
+    transform: rotateY(-180deg);
+}
+
+@keyframes stayvisible {
+    0% {
+        visibility: visible
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-webkit-keyframes stayvisible {
+    0% {
+        visibility: visible
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+.card-content {
+    transition: .5s ease-out;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    position: relative;
+}
+
+.card-back, .card-front {
+    flex-direction: column;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+    position: absolute;
+    top: 50vh;
+    left: 0;
+}
+/*card background by Nasa*/
+.card-front {
+    transform: rotateY(0deg);
+    -webkit-animation: stayvisible .5s both;
+    animation: stayvisible .5s both;
+    -ms-animation: donothing .5s;
+    -ms-transition: visibility 0s linear .17s;
+    visibility: visible;
+    position: relative;
+    background-position: center;
+    background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/blackholexray.png");
+}
+.flip .card-front, .card-back {
+    -webkit-animation: stayvisible .5s both;
+    animation: stayvisible .5s both;
+    -ms-animation: donothing .5s;
+    -ms-transition: visibility 0s linear .17s;
+    visibility: hidden;
+}
+
+.flip .card-back {
+    -webkit-animation: stayvisible .5s both;
+    animation: stayvisible .5s both;
+    -ms-animation: donothing .5s;
+    -ms-transition: visibility 0s linear .17s;
+    visibility: visible;
+}
+
+.flip .card-content {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
