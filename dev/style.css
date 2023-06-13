@@ -10,3 +10,8 @@ body {
     background-attachment: fixed;
     background: linear-gradient(0deg, rgba(25,22,33,1) 0%, rgba(2,1,17,1) 100%);
 }
+#mainDiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    box-sizing: border-box;
+}
