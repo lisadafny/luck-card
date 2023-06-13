@@ -1,20 +1,20 @@
 /*card images by Nasa*/
-.card-image-cc803b57be7d55444ae6f763d256ef6a4fda5deb{
+.card-back.card-image-cc803b57be7d55444ae6f763d256ef6a4fda5deb{
     background-position: center;
     background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/stsci-01gkmkkhkk7hr64v5hgx4gms9k_0.png");
 }
 
-.card-image-a684248598a590e37dd16686c8022b880a9a63d9{
+.card-back.card-image-a684248598a590e37dd16686c8022b880a9a63d9{
     background-position: center;
     background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/682400main_pia14922_full_full.jpg");
 }
 
-.card-image-a2f7fcb5afeb7983ffbb6ce3d1a7e91edf321350{
+.card-back.card-image-a2f7fcb5afeb7983ffbb6ce3d1a7e91edf321350{
     background-position: center;
     background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia25015.jpg");
 }
 
-.card-image-827aa9268a9231cb0d5425a1616beb259352e703{
+.card-back.card-image-827aa9268a9231cb0d5425a1616beb259352e703{
     background-position: center;
     background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia25017-1041.jpg");
 }
